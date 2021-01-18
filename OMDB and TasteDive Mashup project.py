@@ -13,7 +13,6 @@ def extract_movie_titles(dict1):
     for movie in dict1['Similar']['Results']:
         movielist.append(movie['Name'])
     return movielist
-# some invocations that we use in the automated tests; uncomment these if you are getting errors and want better error messages
 def get_related_titles(mlist):
     finalmovielist = []
     for m in mlist:
@@ -38,4 +37,4 @@ def get_sorted_recommendations(movielist):
     related_movies_list = get_related_titles(movielist)
     sorted_rml = sorted(related_movies_list, key = lambda m:(get_movie_rating(get_movie_data(m)),m), reverse = True)
     return sorted_rml
-print(get_sorted_recommendations(["Bridesmaids", "Sherlock Holmes"]))
+# print(get_sorted_recommendations(["Bridesmaids", "Sherlock Holmes"])) 
