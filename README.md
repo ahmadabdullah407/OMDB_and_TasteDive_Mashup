@@ -10,3 +10,4 @@ This project will take us through the process of mashing up data from two differ
 1. You need to provide a list of movies you want to sort recommendations for.
 2. This list should be passed as a formal parameter to 'get_sorted_recommendations()' function.
 3. Return value of this function will be a [rotten tomatoes](https://www.rottentomatoes.com/) rating sorted (highest rating to lowest rating) list of recommendations.
+4. sorting will break the ties for rotten tomatoes score by alphabatical order.
